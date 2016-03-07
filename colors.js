@@ -6,10 +6,5 @@ setup = function(){
 
 setColour = function(){
 	var colour = colorForm.value;
-	if(colour[0] == '#'){
-		colour = colour.split("#")[1];
-	}
-	if (colour.length == 6){
-		colourTry.style.backgroundColor = '#' + colour;
-	}
+	colourTry.style.backgroundColor = colour;
 }
